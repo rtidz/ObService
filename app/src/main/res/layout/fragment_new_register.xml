@@ -15,6 +15,15 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
 
+        <!--Save Button-->
+        <ImageView
+            android:id="@+id/imvsave"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_action_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
 
     </android.support.v7.widget.Toolbar>
 
@@ -44,6 +53,7 @@
 
         <!--Textview-->
         <EditText
+            android:id="@+id/edtname"
             android:inputType="text"
             android:hint="@string/login"
             android:layout_width="match_parent"
@@ -55,7 +65,6 @@
 
 
     <!--user-->
-
     <LinearLayout
         android:background="#75ffffff"
         android:layout_marginLeft="20dp"
@@ -75,6 +84,7 @@
 
         <!--Textview-->
         <EditText
+            android:id="@+id/edtuser"
             android:inputType="text"
             android:hint="@string/user"
             android:layout_width="match_parent"
@@ -86,7 +96,6 @@
 
 
     <!--password-->
-
     <LinearLayout
         android:background="#75ffffff"
         android:layout_marginLeft="20dp"
@@ -106,6 +115,7 @@
 
         <!--Textview-->
         <EditText
+            android:id="@+id/edtpassword"
             android:inputType="text"
             android:hint="@string/password"
             android:layout_width="match_parent"
