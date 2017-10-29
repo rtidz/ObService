@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import r_tidz.observice.MainActivity;
@@ -31,12 +32,14 @@ public class RegisterFragment extends Fragment{
 //        create Toolbar
         createToolbar();
 
-//        Savecontroler
 
+//        Savecontroler
         savecontroler();
 
 
+
     }   // Main method
+
 
     private void savecontroler() {
         ImageView imageView = getView().findViewById(R.id.imvsave);
@@ -44,7 +47,28 @@ public class RegisterFragment extends Fragment{
             @Override
             public void onClick(View v) {
 
-            }
+                // GetValueFromEdtitText
+                EditText nameEditText = getView().findViewById(R.id.edtname);
+                EditText userEditText = getView().findViewById(R.id.edtuser);
+                EditText passwprdEditText = getView().findViewById(R.id.edtpassword);
+
+
+
+                // Change Type Value tostring
+
+                nameString = nameEditText.getText().toString().trim();
+                userString = userEditText.getText().toString().trim();
+                passwordString = passwprdEditText.getText().toString();
+
+                // Checkspace  if it have null space in namestring or uesrsting
+
+                if (nameString.equals("")|| userString.equals("") || passwordString.equals("")) {
+                } else {
+
+                }
+
+
+            }       // Onclick
         });
     }
 

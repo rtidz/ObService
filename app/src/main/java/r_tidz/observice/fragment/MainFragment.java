@@ -16,7 +16,7 @@ import r_tidz.observice.R;
 
 public class MainFragment extends Fragment {
 
-//    create MAin Method
+//    create Main Method
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
